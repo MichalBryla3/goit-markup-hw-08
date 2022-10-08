@@ -1,0 +1,41 @@
+.slider {
+  background-color: #2f303a;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("../images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50% 50%;
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+  &__header {
+    font-size: 44px;
+    color: white;
+    font-weight: 900;
+    line-height: 1.36;
+    border: 200px 452px 280px 452px;
+  }
+  &__main-part--btn {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    line-height: 1.87;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-style: none;
+    padding: 10px 41px 10px 42px;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,43 @@
+.clients {
+  @extend %section;
+
+  &__container {
+    @extend %container;
+  }
+  &__title {
+    @extend %title;
+  }
+
+  &__content {
+    display: flex;
+    padding: 0px;
+  }
+
+  &__content > li:last-child {
+    margin-right: 15px;
+  }
+  &__content > li {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content > li:first-child {
+    margin-left: 19px;
+  }
+
+  &__picture {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    background-color: white;
+    fill: #afb1b8;
+
+    &:active,
+    &:hover,
+    &:focus {
+      fill: var(--primary-color);
+      border-color: var(--primary-color);
+      transition: transform 250ms var(--transition);
+    }
+  }
+}
