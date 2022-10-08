@@ -1,5 +1,5 @@
 .portfolio {
-  @extend %section;
+  padding-top: 94px;
 
   &__container {
     @extend %container;
@@ -27,6 +27,12 @@
       background-color: var(--primary-color);
       transition: transform 250ms var(--transition);
     }
+  }
+}
+.cards {
+  padding-bottom: 94px;
+  &__container {
+    @extend %container;
   }
 }
 
