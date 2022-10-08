@@ -1,0 +1,131 @@
+.form__backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 3s;
+
+  &__checkbox--description a {
+    color: rgba(33, 150, 243, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  &__checkbox--description::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    outline: 1px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+  }
+  &__checkbox:checked + .modal__checkbox--description::before {
+    background-color: rgba(33, 150, 243, 1);
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    outline: none;
+    border-radius: 2px;
+  }
+}
+
+.form {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+
+  & > label {
+    width: 448px;
+
+    color: rgba(117, 117, 117, 1);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+  & > h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin: 0px;
+  }
+  &__label {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 42px;
+  }
+  & input:active,
+  & input:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+    outline: none;
+    transition: transform 250ms var(--transition);
+  }
+
+  &__textarea {
+    height: 120px;
+    resize: none;
+    padding: 12px 0px 0px 16px;
+
+    &:active,
+    &:focus {
+      border: 1px solid #2196f3;
+      border-radius: 4px;
+      outline: none;
+      transition: transform 250ms var(--transition);
+    }
+  }
+  & label:focus-within {
+    fill: #2196f3;
+    transition: transform 250ms var(--transition);
+  }
+}
+
+.form__icon1 {
+  position: absolute;
+
+  left: 57px;
+  top: 98px;
+  height: 11px;
+  width: 11px;
+}
+.form__icon2 {
+  position: absolute;
+  left: 57px;
+  top: 161px;
+  height: 13px;
+  width: 13px;
+}
+.form__icon3 {
+  position: absolute;
+  left: 57px;
+  top: 225px;
+  height: 15px;
+  width: 14px;
+}

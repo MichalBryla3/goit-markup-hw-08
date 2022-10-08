@@ -1,0 +1,22 @@
+.logo {
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.19;
+  padding: 24px 93px 25px 0px;
+
+  &__header--first {
+    color: var(--primary-color);
+  }
+  &__header--second {
+    color: black;
+  }
+  &-footer--first {
+    color: var(--primary-color);
+    line-height: 1.19;
+  }
+  &-footer--second {
+    color: #ffffff;
+    line-height: 1.19;
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+  --font-size: 14px;
+  --font-weight: 400;
+  --font-style: normal;
+  --font-family: "Roboto", "Raleway", sans-serif;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --color-button-close: rgb(255, 255, 255);
+  --primary-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: auto;
+  list-style: none;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+}
