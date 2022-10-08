@@ -50,9 +50,18 @@
     background-color: rgba(47, 48, 58, 0.8);
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   .responsibilities__content {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .responsibilities__content > li {
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .responsibilities__subtitle {
+    text-align: center;
   }
 }
