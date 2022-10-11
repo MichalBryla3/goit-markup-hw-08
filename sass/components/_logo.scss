@@ -20,3 +20,9 @@
     line-height: 1.19;
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .logo {
+    padding: 0px;
+  }
+}

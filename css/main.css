@@ -44,8 +44,9 @@ body {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  body {
-    background-color: green;
+  .cards__container, .portfolio__container, .clients__container, .personel__container, .responsibilities__container, .slider__container, .newsletter__container, .header__container {
+    max-width: 480px;
+    padding: 0px 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -80,6 +81,11 @@ body {
   line-height: 1.19;
 }
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .logo {
+    padding: 0px;
+  }
+}
 .personel__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,6 +589,42 @@ body {
   margin-left: 24px;
 }
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .footer {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 60px 0px;
+  }
+  .footer__container {
+    margin: 0px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .footer-social {
+    margin: auto;
+    text-align: center;
+  }
+  .footer-social__title {
+    text-align: center;
+  }
+  .footer-social__icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 60px;
+  }
+  .newsletter {
+    margin: auto;
+    text-align: center;
+    padding: 60px auto;
+  }
+  .newsletter__input {
+    margin: 20px auto;
+  }
+}
 .slider {
   background-color: #2f303a;
   height: 600px;
@@ -619,6 +661,11 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .slider__header {
+    font-size: 26px;
+  }
+}
 .responsibilities__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,12 +725,24 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .responsibilities__icon {
+    width: 450px;
+    height: 120px;
+  }
   .responsibilities__content > li {
     text-align: center;
     word-wrap: break-word;
+    padding-bottom: 30px;
   }
   .responsibilities__subtitle {
     text-align: center;
+    padding-bottom: 10px;
+  }
+  .responsibilities__paragraph {
+    text-align: start;
+  }
+  .responsibilities__mobile--hidden {
+    display: none;
   }
 }
 .personel {
@@ -723,6 +782,18 @@ body {
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .personel {
+    margin: auto;
+  }
+  .personel__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .clients__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +831,28 @@ body {
   transition: transform 250ms var(--transition), -webkit-transform 250ms var(--transition);
 }
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .clients__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .clients__content li {
+    margin: 0px;
+  }
+  .clients__content > li:last-child {
+    margin-right: 0px;
+  }
+  .clients__content > li:first-child {
+    margin-left: 0px;
+  }
+}
 .portfolio {
   padding-top: 94px;
 }

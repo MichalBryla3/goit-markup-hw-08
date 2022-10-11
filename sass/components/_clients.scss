@@ -41,3 +41,21 @@
     }
   }
 }
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .clients__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .clients__content li {
+    margin: 0px;
+  }
+  .clients__content > li:last-child {
+    margin-right: 0px;
+  }
+
+  .clients__content > li:first-child {
+    margin-left: 0px;
+  }
+}

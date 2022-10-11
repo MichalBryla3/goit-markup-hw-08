@@ -55,13 +55,24 @@
     display: flex;
     flex-wrap: wrap;
   }
-
+  .responsibilities__icon {
+    width: 450px;
+    height: 120px;
+  }
   .responsibilities__content > li {
     text-align: center;
     word-wrap: break-word;
+    padding-bottom: 30px;
   }
 
   .responsibilities__subtitle {
     text-align: center;
+    padding-bottom: 10px;
+  }
+  .responsibilities__paragraph {
+    text-align: start;
+  }
+  .responsibilities__mobile--hidden {
+    display: none;
   }
 }
