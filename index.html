@@ -34,6 +34,18 @@
               <span class="logo__header--first">Web</span
               ><span class="logo__header--second">Studio</span></a
             >
+            <!------------------ MENU MOBILE--------------->
+            <button
+              type="button"
+              class="header__menu--button js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="header__menu--styles" width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+
             <ul class="nav">
               <li>
                 <a class="nav__link nav__link--underline" href="#">Agencja</a>
@@ -74,16 +86,6 @@
           </ul>
         </div>
       </div>
-      <button
-        type="button"
-        class="header__menu-button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="header__menu-styles" width="24" height="24">
-          <use href="./images/icons.svg#icon-envelope-fill"></use>
-        </svg>
-      </button>
     </header>
     <main>
       <section class="slider">
@@ -105,7 +107,7 @@
                   xlink:href="./images/icons.svg#icon-antenna-1"
                   width="65.32px"
                   height="70px"
-                  x="102.34"
+                  x="200.34"
                   y="25"
                 ></use>
               </svg>
@@ -121,7 +123,7 @@
                   xlink:href="./images/icons.svg#icon-clock-1"
                   width="66.96px"
                   height="70px"
-                  x="101.5"
+                  x="201.5"
                   y="25"
                 ></use>
               </svg>
@@ -137,7 +139,7 @@
                   xlink:href="./images/icons.svg#icon-diagram-1"
                   width="70px"
                   height="53.69px"
-                  x="100"
+                  x="200"
                   y="33.2"
                 ></use>
               </svg>
@@ -153,7 +155,7 @@
                   xlink:href="./images/icons.svg#icon-astronaut-1"
                   width="54.83px"
                   height="60.66px"
-                  x="100"
+                  x="200"
                   y="30.23"
                 ></use>
               </svg>
@@ -745,14 +747,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="60" height="60">
+        <svg width="18.67" height="18.67">
           <use href="./images/icons.svg#icon-X"></use>
         </svg>
       </button>
-      <ul class="nav">
+      <ul class="nav__mobile">
         <li>
           <a class="nav__link" href="#">Agencja</a>
         </li>
@@ -761,34 +762,21 @@
         </li>
         <li><a class="nav__link" href="#">Kontakt</a></li>
       </ul>
-      <ul class="contact">
-        <li class="contact__date">
-          <a href=""
-            ><svg
-              class="contact__envelope-icon"
-              id="icon-envelope"
-              height="16px"
-              width="12px"
-            >
-              <use xlink:href="./images/icons.svg#icon-envelope"></use></svg
-          ></a>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="contact__date">
-          <a href=""
-            ><svg
-              class="contact__smartphone-icon"
-              id="icon-smartphone"
-              width="10px"
-              height="16px"
-            >
-              <use xlink:href="./images/icons.svg#icon-smartphone"></use></svg
-          ></a>
+      <ul class="contact__mobile">
+        <li class="contact__date--mobile">
           <a href="tel:+48111111111">+48 111 111 111</a>
         </li>
+        <li class="contact__date--mobile">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
       </ul>
+      <div class="mobile__social">
+        <a class="mobile__social--color" href="#">Instagram</a>
+        <a class="mobile__social--color" href="#">Twitter</a>
+        <a class="mobile__social--color" href="#">Facebook</a>
+        <a class="mobile__social--color" href="#">Linkedin</a>
+      </div>
     </div>
-
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

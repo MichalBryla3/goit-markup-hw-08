@@ -98,7 +98,59 @@
   .nav {
     display: none;
   }
+  .header__nav {
+    margin: 0px;
+  }
   .contact {
     display: none;
+  }
+  .header__menu--styles:hover {
+    fill: var(--primary-color);
+  }
+  .header__menu--button {
+    border: none;
+    background-color: white;
+  }
+
+  .nav__mobile,
+  .contact__mobile {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    padding: 48px 0px 36px 0px;
+  }
+  .contact__mobile {
+    font-size: 34px;
+  }
+  .nav__mobile li,
+  .contact__mobile li {
+    padding-bottom: 36px;
+  }
+
+  .contact__date--mobile:first-child a {
+    color: var(--primary-color);
+  }
+  .contact__date--mobile a {
+    color: #757575;
+    text-decoration: none;
+  }
+  .contact__date--mobile:hover > a {
+    color: var(--primary-color);
+  }
+  .mobile__social {
+    display: flex;
+  }
+  .mobile__social--color {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+  .mobile__social--color:nth-child(-n + 3) {
+    border-right: 1px solid #21212133;
+    padding-right: 10px;
   }
 }
