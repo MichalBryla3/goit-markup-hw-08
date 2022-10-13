@@ -26,6 +26,18 @@
               <span class="logo__header--first">Web</span
               ><span class="logo__header--second">Studio</span></a
             >
+            <!------------------ MENU MOBILE--------------->
+            <button
+              type="button"
+              class="header__menu--button js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="header__menu--styles" width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+
             <ul class="nav">
               <li>
                 <a class="nav__link" href="#">Agencja</a>
@@ -403,5 +415,43 @@
         </div>
       </form>
     </footer>
+    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-X"></use>
+        </svg>
+      </button>
+      <ul class="nav__mobile">
+        <li>
+          <a class="nav__link" href="#">Agencja</a>
+        </li>
+        <li>
+          <a class="nav__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="nav__link" href="#">Kontakt</a></li>
+      </ul>
+      <ul class="contact__mobile">
+        <li class="contact__date--mobile">
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li class="contact__date--mobile">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <div class="mobile__social">
+        <a class="mobile__social--color" href="#">Instagram</a>
+        <a class="mobile__social--color" href="#">Twitter</a>
+        <a class="mobile__social--color" href="#">Facebook</a>
+        <a class="mobile__social--color" href="#">Linkedin</a>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
