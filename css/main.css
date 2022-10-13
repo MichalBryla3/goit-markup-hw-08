@@ -823,7 +823,7 @@ body {
     margin: auto;
   }
   .footer--special {
-    margin: 80px;
+    margin: 80px 0px 30px 380px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
