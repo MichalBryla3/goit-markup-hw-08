@@ -43,31 +43,31 @@ body {
   font-style: var(--font-style);
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .cards__container, .portfolio__container, .clients__container, .personel__container, .responsibilities__container, .slider__container, .newsletter__container, .header__container {
     max-width: 480px;
     padding: 0px 15px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (max-width: 767px) {
   .menu {
     display: none;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu .link {
     padding: 10px;
     color: inherit;
     text-decoration: none;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu .link:hover,
 .menu .link:focus {
     text-decoration: underline;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -89,18 +89,18 @@ body {
     outline: none;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
     position: fixed;
     top: 0;
@@ -118,13 +118,13 @@ body {
     transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container.is-open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container .menu-toggle {
     position: absolute;
     top: 16px;
@@ -132,14 +132,14 @@ body {
     color: #fff;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-menu .link {
     display: block;
     padding: 10px;
@@ -176,7 +176,8 @@ body {
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .logo {
-    padding: 0px;
+    padding: auto;
+    margin: auto;
   }
 }
 .personel__social {
@@ -529,6 +530,14 @@ body {
   margin-top: 28px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
 .footer-social {
   margin: 72px 0px;
 }
@@ -1070,8 +1079,7 @@ body {
 }
 
 .header__container, .newsletter__container, .slider__container, .responsibilities__container, .personel__container, .clients__container, .portfolio__container, .cards__container {
-  min-width: 320px;
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
